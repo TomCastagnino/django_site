@@ -32,6 +32,9 @@ DEBUG = config['DEBUG']
 
 hosts = list(config['HOSTS'].values())
 
+if hosts == ['']:
+    hosts = []
+
 ALLOWED_HOSTS = hosts
 
 
