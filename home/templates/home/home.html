@@ -1,62 +1,224 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="description" name="description">
-    <meta name="google" content="notranslate" />
-
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link rel="icon" href="{% static 'home/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-
-    <title>Castagnino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom Castagnino</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home/main.css/' %}">
 </head>
 
 <body>
+	<header>
+		<div class="menu-toggler">
+			<div class="bar half start"></div>
+			<div class="bar"></div>
+			<div class="bar half end"></div>
+		</div>
+		<nav class="top-nav">
+			<ul class="nav-list">
+				<li>
+					<a href="{% url 'home' %}" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a href="#about" class="nav-link">About</a>
+				</li>
+				<li>
+					<a href="#services" class="nav-link">Services</a>
+				</li>
+				<li>
+					<a href="#portfolio" class="nav-link">Portfolio</a>
+				</li>
+				<li>
+					<a href="#experience" class="nav-link">Experience</a>
+				</li>
+				<li>
+					<a href="#contact" class="nav-link">Contact</a>
+				</li>																				
+			</ul>
+		</nav>
+		<div class="landing-text">
+			<h1>Tom Castagnino</h1>
+			<h6>Software Developer</h6>
+		</div>
+	</header>
 
-    <div id="wrapper">
-        <div id="text" style="">
-            <nav>
-                <ul>
-                    <li class="active"><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'works' %}">Works</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </nav>    
-        </div>
-        <div id="particle-canvas">
+	<section class="about" id="about">
+		<div class="container">
+			<div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+				<img src="{% static 'home/images/profile.jpeg' %}">
+			</div>
+			<div class="about-details" data-aos="fade-left" data-aos-delay="600">
+				<div class="about-heading">
+					<h1>About</h1>
+					<h6>Myself</h6>
+				</div>
+				<p>Every man who has lotted here over the centuries, has looked up to the light and imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing uncontrollable thirst, many have died trying. And then here there can be no true despair without hope.</p>
+				<div class="social-media">
+					<ul class="nav-list">
+						<li>
+							<a href="" class="icon-link">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="icon-link">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="icon-link">
+								<i class="fab fa-dribbble-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        </div>
-    </div>
+	<section class="services" id="services">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Services</h1>
+				<h6>What I can do for you</h6>
+			</div>
+			<div class="my-skills">
+				<div class="skill" data-aos="fade-in" data-aos-delay="300">
+					<div class="icon-container">
+						<i class="fas fa-layer-group"></i>
+					</div>
+					<h1>Web Design</h1>
+					<p>very man who has lotted here over the centuries
+					very man who has lotted here over the centuries</p>
+				</div>
+				<div class="skill" data-aos="fade-in" data-aos-delay="600">
+					<div class="icon-container">
+						<i class="fas fa-code"></i>
+					</div>
+					<h1>Web Development</h1>
+					<p>very man who has lotted here over the centuries
+					very man who has lotted here over the centuries</p>
+				</div>
+				<div class="skill" data-aos="fade-in" data-aos-delay="900">
+					<div class="icon-container">
+						<i class="fas fa-chart-bar"></i>
+					</div>
+					<h1>Product Strategy</h1>
+					<p>very man who has lotted here over the centuries
+					very man who has lotted here over the centuries</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <script type="text/javascript" src="{% static 'home/particle-network.min.js' %}"></script>
-    <script type="text/javascript">
-        var canvasDiv = document.getElementById('particle-canvas');
-        var options = {
-            particleColor: '#888',
-            interactive: true,
-            speed: 'medium',
-            density: 'high'
-        };
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
-    </script>
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Portfolio</h1>
+				<h6>View some of my recent work</h6>
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+					<img src="{% static 'home/images/portitem1.jpeg' %}">
+				</div>
+				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>very man who has lotted here over the centuries</p>
+					<a class="cta" href="#">View Details</a>
+				</div>	
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+					<h6>Web Design</h6>
+					<h1>Product Layout</h1>
+					<p>very man who has lotted here over the centuries</p>
+					<a class="cta" href="#">View Details</a>
+				</div>
+				<div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+					<img src="{% static 'home/images/portitem2.jpeg' %}">
+				</div>	
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+					<img src="{% static 'home/images/portitem3.jpeg' %}">
+				</div>
+				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+					<h6>Web Design</h6>
+					<h1>Product Sketch</h1>
+					<p>very man who has lotted here over the centuries</p>
+					<a class="cta" href="#">View Details</a>
+				</div>	
+			</div>
+		</div>
+	</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'home/script.js' %}"></script>
+	<section class="experience" id="experience">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Work Experience</h1>
+				<h6>Past and current jobs</h6>
+			</div>
+			<div class="timeline" data-aos="fade-down" data-aos-delay="300">
+				<ul>
+					<li class="date" data-date="2011 - Present">
+						<h1>Google</h1>
+						<p>very man who has lotted here over the centuries
+						very man who has lotted here over the centuries</p>
+					</li>
+					<li class="date" data-date="2008 - 2011">
+						<h1>Facebook</h1>
+						<p>very man who has lotted here over the centuries
+						very man who has lotted here over the centuries</p>
+					</li>
+					<li class="date" data-date="2002 - 2008">
+						<h1>Microsoft</h1>
+						<p>very man who has lotted here over the centuries
+						very man who has lotted here over the centuries</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Contact</h1>
+				<h6>Let's work together</h6>
+			</div>
+			<form action="" data-aos="fade-up" data-aos-delay="300">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name..." required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email..." required>
+				<label for="service">Services</label>
+				<select name="service" id="service">
+					<option value="">Web Design</option>
+					<option value="">Web Development</option>
+					<option value="">Web Design/Development</option>
+				</select>
+				<label for="subject">Subject</label>
+				<textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+
+	<footer class="copyright">
+		<div class="up" id="up">
+			<i class="fas fa-chevron-up"></i>
+		</div>
+		<p>&copy; 2020 Tom Castagnino</p>
+	</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{% static 'home/main.js' %}"></script>
 </body>
 
 </html>
-
-
-
-
-<!-- https://github.com/JulianLaval/canvas-particle-network -->
