@@ -642,10 +642,12 @@ input[type="submit"]:hover{
 
 	.timeline .date{
 		font-size: .7rem;
+		font-family: sans-serif;
 	}
 
 	.timeline .date::before{
 		font-size: .7rem;
+		font-family: sans-serif;
 	}
 
 	form{
