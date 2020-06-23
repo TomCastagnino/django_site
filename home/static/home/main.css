@@ -15,7 +15,7 @@
 
 html{
 	font-size: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nova Flat','Allerta Stencil', 'Alegreya Sans SC',  'Courier New','Roboto', sans-serif ;
 	color: #eee;
 }
 
@@ -27,7 +27,7 @@ body{
 }
 
 section{
-	padding: 6rem 0;
+	padding: 5rem 0 35rem 0;
 }
 
 a{
@@ -238,17 +238,19 @@ li{
 
 .about-heading{
 	text-align: center;
-	text-transform: uppercase;
+
 	line-height: 0;
 	margin-bottom: 6rem;
 }
 
 .about-heading h1{
+	text-transform: uppercase;
 	font-size: 10rem;
 	opacity: .3;
 }
 
 .about-heading h6{
+	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: 300;
 }
@@ -440,6 +442,7 @@ li{
 /*Start contact*/
 .contact{
 	background-color: #221e3f;
+	padding: 6rem 0 10rem 0;
 }
 
 form{
@@ -570,6 +573,7 @@ input[type="submit"]:hover{
 		margin: 0 2rem;
 	}
 
+
 	.icon-container{
 		width: 7rem;
 		height: 7rem;
@@ -622,7 +626,7 @@ input[type="submit"]:hover{
 		flex-direction: column;
 	}
 
-	.porfolio-img{
+	.portfolio-img{
 		margin: 0 0 2rem 0;
 		order: 1;
 	}
@@ -633,7 +637,7 @@ input[type="submit"]:hover{
 	}
 
 	.timeline p{
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 
 	.timeline .date::before{
