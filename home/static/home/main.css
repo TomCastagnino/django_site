@@ -424,7 +424,9 @@ li{
 	left:  -21rem;
 	text-align: right;
 	min-width: 12rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+	font-family: 'Roboto';
+	font-weight: 600;
 }
 
 .timeline .date::after{
