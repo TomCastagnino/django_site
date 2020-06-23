@@ -27,7 +27,7 @@ body{
 }
 
 section{
-	padding: 5rem 0 35rem 0;
+	padding: 0rem 0 35rem 0;
 }
 
 a{
@@ -640,8 +640,12 @@ input[type="submit"]:hover{
 		font-size: 1.3rem;
 	}
 
+	.timeline .date{
+		font-size: 1rem;
+	}
+
 	.timeline .date::before{
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	form{
