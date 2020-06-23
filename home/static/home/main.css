@@ -1,4 +1,4 @@
-/*Start global*/
+Start global*/
 @font-face {
   font-family: 'The Historia Demo';
   src: url('fonts/TheHistoriaDemo.woff2') format('woff2'),
@@ -637,12 +637,21 @@ input[type="submit"]:hover{
 	}
 
 	.timeline p{
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 	}
 
 	.timeline .date::before{
-		font-size: 1.1rem;
+		font-size: 1.4rem;
+		min-width: 13rem;
 	}
+
+/*	.timeline .date::before{
+	content: attr(data-date);
+	left:  -21rem;
+	text-align: right;
+	min-width: 12rem;
+	font-size: 1.5rem;
+}*/
 
 	form{
 		width: 100%;
@@ -653,4 +662,4 @@ input[type="submit"]:hover{
 	}
 
 }
-/*End media queries*/
+/*End media queries
