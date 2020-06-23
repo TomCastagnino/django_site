@@ -637,11 +637,11 @@ input[type="submit"]:hover{
 	}
 
 	.timeline p{
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 	}
 
 	.timeline .date::before{
-		font-size: 1.4rem;
+		font-size: 1.1rem;
 	}
 
 	form{
