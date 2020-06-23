@@ -631,6 +631,11 @@ input[type="submit"]:hover{
 		order: 1;
 	}
 
+	.experience{
+		width: 85%
+		margin: 0;
+
+	}
 	.portfolio-description{
 		margin: 0;
 		order: 2;
@@ -642,7 +647,7 @@ input[type="submit"]:hover{
 
 	.timeline .date::before{
 		font-size: 1.1rem;
-		min-width: 14rem;
+/*		min-width: 14rem;*/
 	}
 
 /*	.timeline .date::before{
