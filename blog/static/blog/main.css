@@ -1,5 +1,5 @@
 body {
-  background: #fafafa;
+  background: linear-gradient(to right, #ffe838, #fd57bf);
   color: #333333;
   margin-top: 5rem;
 }
@@ -13,7 +13,7 @@ ul {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background: #5f9ea0;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -29,7 +29,7 @@ ul {
 }
 
 .content-section {
-  background: #ffffff;
+  background: white;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
